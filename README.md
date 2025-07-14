@@ -9,4 +9,4 @@ Test case is written for the below scenarios:
   4. Test case to validate adding multiple items to the cart.
   5. Test case to validate the complete checkout process of products
 
-Report, output file and log file generated.
+Report and log files generated for all test cases and attached in Reports folder.
