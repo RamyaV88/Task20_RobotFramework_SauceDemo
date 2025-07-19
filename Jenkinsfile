@@ -3,17 +3,17 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git branch: 'main', url: 'https://github.com/RamyaV88/RobotFrameWork.git'
+                git branch: 'main', url: 'https://github.com/RamyaV88/Task20_RobotFramework_SauceDemo.git'
             }
         }
         stage('Install Requirements') {
             steps {
-                bat '"C:\Users\DELL\AppData\Local\Programs\Python\Python313\python.exe" -m pip install -r requirements.txt'
+                bat '"C:\\Users\\DELL\\AppData\\Local\\Programs\\Python\\Python313\\python.exe" -m pip install -r requirements.txt'
             }
         }
         stage('Run Tests') {
             steps {
-                bat '"C:\Users\DELL\AppData\Local\Programs\Python\Python313\python.exe" -m robot TestCodes'
+                bat '"C:\\Users\\DELL\\AppData\\Local\\Programs\\Python\\Python313\\python.exe" -m robot TestCodes'
             }
         }
     }
